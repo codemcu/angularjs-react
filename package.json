@@ -2,15 +2,15 @@
   "name": "angular-seed",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "description": "Implementation of a react component within a project in angularJS",
+  "repository": "https://github.com/codemcu/angularjs-react",
+  "author": "Mauricio Correa <frontend.mcu@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "angular": "1.7.5",
     "angular-loader": "1.7.5",
     "angular-route": "1.7.5",
-    "html5-boilerplate": "0.0.1",
-    "ngreact": "^0.5.2"
+    "html5-boilerplate": "0.0.1"
   },
   "devDependencies": {
     "angular-mocks": "1.7.5",

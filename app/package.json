@@ -1,0 +1,12 @@
+{
+  "name": "react",
+  "private": true,
+  "version": "0.0.0",
+  "description": "ngreact",
+  "license": "MIT",
+  "dependencies": {
+    "ngreact": "0.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {}
+}
