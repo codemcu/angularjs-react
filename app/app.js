@@ -1,15 +1,17 @@
 'use strict';
 
-var myApp = angular.module('myApp', [])
+const myApp = angular.module('myApp', ['react'])
 
-myApp.controller('ReactController',
-    function($scope) {
-      $scope.title = 'react'
-    })
-myApp.directive('reactComponent',
-    function () {
-      return {
-        restrict: 'E',
-        template: "<input type='text' name='dates' />"
-      }
-    })
+myApp.controller('reactController',
+  ['$scope', function ($scope) {
+      $('input[name="dates"]').daterangepicker();
+      $scope.date = { value: '' };
+    }]);
+
+const ReactComponent = React.createClass({
+  render: function() {
+    return React.DOM.span(null, `Componente React: ${this.props.value}`);
+  }
+});
+
+myApp.value('ReactComponent', ReactComponent);

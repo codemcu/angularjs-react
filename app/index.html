@@ -20,12 +20,16 @@
 </head>
 
 <body>
-
-  <div style="padding: 15px" ng-controller="ReactController">
-    {{title}}
-    <react-component />
+  <div class="container">
+    <div class="component" ng-controller="reactController">
+      <label>Componente angularJS:</label>
+      <input type="text" name="dates" ng-model="date.value" placeholder="Elige una fecha">
+      <hr>
+      <p>
+        <react-component name="ReactComponent" props="date" />
+      </p>
+    </div>
   </div>
-
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -34,16 +38,21 @@
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
+
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/15.6.1/react-dom.js"></script>
+
   <script src="app.js"></script>
   <script src="core/version/version.js"></script>
   <script src="core/version/version-directive.js"></script>
   <script src="core/version/interpolate-filter.js"></script>
+  <script src="./node_modules/ngreact/ngReact.js"></script>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
 </body>
 
